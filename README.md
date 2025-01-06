@@ -1,0 +1,3 @@
+# useEffect Return Value in React
+
+This repository demonstrates a common misunderstanding in using the return value of the `useEffect` hook in React. The return value of `useEffect` should be a cleanup function to perform any necessary cleanup (e.g., cancelling subscriptions, timers) when the component unmounts or before the next effect runs.  Using it for other calculations is incorrect and can cause unexpected results.
